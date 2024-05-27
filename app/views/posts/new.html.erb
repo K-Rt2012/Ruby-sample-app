@@ -1,0 +1,10 @@
+<h1>新規投稿ページ</h1>
+<ul>
+  <% @post.errors.full_messages.each do |message| %>
+    <li class="error_message"><%= message %></li>
+  <% end %>
+</ul>
+<%= form_tag("/posts/create") do %>
+  <textarea name="content"><%= @post.content %></textarea>
+  <input type="submit" value="送信" />
+<% end %>

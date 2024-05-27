@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   #postsアクション
   get "posts/index" => "posts#index"
+  get "posts/new" => "posts#new"
+  post "posts/create" => "posts#create"
   get "posts/:id" => "posts#show"
-
   #homeアクション
   get '/' => "home#top"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
