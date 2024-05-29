@@ -1,0 +1,18 @@
+current directory: /Users/kumamotoryota/sample_app/vendor/ruby/3.3.0/gems/racc-1.7.3/ext/racc/cparse
+/Users/kumamotoryota/.rbenv/versions/3.3.1/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/kumamotoryota/sample_app/vendor/ruby/3.3.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240529-5055-cdvulx sitelibdir\=./.gem.20240529-5055-cdvulx clean
+
+current directory: /Users/kumamotoryota/sample_app/vendor/ruby/3.3.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240529-5055-cdvulx sitelibdir\=./.gem.20240529-5055-cdvulx
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/kumamotoryota/sample_app/vendor/ruby/3.3.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240529-5055-cdvulx sitelibdir\=./.gem.20240529-5055-cdvulx install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20240529-5055-cdvulx/racc
+
+current directory: /Users/kumamotoryota/sample_app/vendor/ruby/3.3.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240529-5055-cdvulx sitelibdir\=./.gem.20240529-5055-cdvulx clean

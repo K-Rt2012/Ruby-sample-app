@@ -12,19 +12,30 @@
 
   <body>
     <header>
-      <div>
-        <ul>
-          <li>
-            <%= link_to("投稿SNS", "/") %>
-          </li>
-          <li>
-            <%= link_to("投稿一覧", "/posts/index") %>
-          </li>
-          <li>
-            <%= link_to("新規投稿", "/posts/new") %>
-          </li>
-        </ul>
-      </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <%= link_to("投稿SNS", "/" , class: "btn btn-outline-success") %>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <%= link_to("投稿一覧", "/posts/index" , class: "btn btn-outline-success") %>
+              </li>
+              <li class="nav-item">
+                <%= link_to("新規投稿", "/posts/new" , class: "btn btn-outline-success") %>
+              </li>
+              <li class="nav-item dropdown">
+                <%= link_to("ユーザー一覧", "/users/index" , class: "btn btn-outline-success") %>
+              </li>
+              <li class="nav-item">
+                <%= link_to("新規登録", "/users/new" , class: "btn btn-outline-success") %>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <% if flash[:notice] %>
       <%= flash[:notice] %>

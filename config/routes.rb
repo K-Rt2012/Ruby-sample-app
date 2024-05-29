@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get "users/index" => "users#index"
+  get "users/new" => "users#new"
+  post "users/create" => "users#create"
   #postsアクション
   get "posts/index" => "posts#index"
   get "posts/new" => "posts#new"

@@ -1,0 +1,19 @@
+current directory: /Users/kumamotoryota/sample_app/vendor/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+/Users/kumamotoryota/.rbenv/versions/3.3.1/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/kumamotoryota/sample_app/vendor/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240529-5055-769ryu sitelibdir\=./.gem.20240529-5055-769ryu clean
+
+current directory: /Users/kumamotoryota/sample_app/vendor/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240529-5055-769ryu sitelibdir\=./.gem.20240529-5055-769ryu
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.bundle
+
+current directory: /Users/kumamotoryota/sample_app/vendor/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240529-5055-769ryu sitelibdir\=./.gem.20240529-5055-769ryu install
+/usr/bin/install -c -m 0755 debug.bundle ./.gem.20240529-5055-769ryu/debug
+
+current directory: /Users/kumamotoryota/sample_app/vendor/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240529-5055-769ryu sitelibdir\=./.gem.20240529-5055-769ryu clean
