@@ -1,12 +1,10 @@
-<h1>新規ユーザー登録</h1>
-<!--<%= form_tag("/users/create") do %>
-  <h2>ユーザー名</h2>
-  <input name="name" value="<%= @user.name %>"/>
-  <h2>メールアドレス</h2>
-  <input name="email" value="<%= @user.email %>"/>
-  <input type="submit" value="送信" />
-<% end %>-->
-<%= form_tag("/users/create") do %>
+<ul>
+  <% @user.errors.full_messages.each do |message| %>
+    <% console.log(message) %>
+    <li class="error_message"><%= message %></li>
+  <% end %>
+</ul>
+<%= form_tag("/users/#{@user.id}/update") do %>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">User name</label>
     <input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="name" value="<%= @user.name %>">
@@ -18,7 +16,7 @@
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+    <input type="password" class="form-control" id="exampleInputPassword1" name="password" value="<%= @user.password %>">
   </div>
   <button type="submit" class="btn btn-primary">送信</button>
 <% end %>

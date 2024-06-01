@@ -2,6 +2,9 @@ Rails.application.routes.draw do
   get "users/index" => "users#index"
   get "users/new" => "users#new"
   post "users/create" => "users#create"
+  get "users/:id/edit" => "users#edit"
+  get "users/:id" => "users#show"
+  post "users/:id/update" => "users#update"
   #postsアクション
   get "posts/index" => "posts#index"
   get "posts/new" => "posts#new"
