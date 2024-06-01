@@ -1,4 +1,7 @@
 <h1>ユーザー一覧</h1>
 <% @users.each do |user| %>
-  <%= link_to(user.name, "/users/#{user.id}") %>
+  <div>
+    <img class="user_default" src="<%= "/user_image/#{user.image_name}" %>">
+    <%= link_to(user.name, "/users/#{user.id}") %>
+  </div>
 <% end %>
